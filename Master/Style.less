@@ -1,0 +1,196 @@
+/*Definición de Variables*/
+@color-fondo: white;
+@color-section1: #38D9BC;
+@color-section2: #FFB913;
+@color-letras:#565454;
+@color-letras2:#FFB913;
+@fuente-principal: 'Questrial';
+.H2{
+    font-family: @fuente-principal;
+    color: @color-letras;
+    font-size: 45px;
+}
+body{
+    background-image: url(../img/Home\ \(1\).png) ;
+    background-repeat: no-repeat;
+}
+header{
+    nav{
+        
+        h1{
+            font-family: @fuente-principal;
+            font-size: 40px;
+            padding: 20px 25px 25px 25px;
+            color:@color-letras;
+        }
+        #logo{
+            font-size: 25px;
+            color: @color-letras2;
+            font-family: @fuente-principal;
+            
+        }
+             ul{
+                   text-align: center;
+                li{
+                    font-family: @fuente-principal;
+                    display: inline-block;
+                    padding: 30px 25px 20px 25px;
+                    font-size: 25px;
+                    color:@color-letras;
+                    
+                }
+                 a:hover{
+                     color: @color-letras2;
+                 }
+           }
+      }
+}
+section{
+    main{
+        .titulo{
+            margin-top:30px;
+            margin-left: 47px;
+            font-family: @fuente-principal;
+            font-size: 90px;
+            color: @color-letras;
+            font-weight: bold;
+            padding: 35px;
+                                    
+        }
+         h2{
+             .H2();
+             padding-left: 50px;
+             padding-top:10px;
+             
+         }
+         .btn1{
+            border-color: @color-section2;
+            color: @color-letras;
+            border-radius: 5px;
+            border-width: 3px;
+            margin-left: 70px;
+            margin-top: 50px;
+            padding: 10px;
+         }
+         .btn1:hover{
+             color: white;
+         }
+         .btn2{
+            border-color: @color-section1;
+            color: @color-letras;
+            border-radius: 5px;
+            border-width: 3px;
+            margin-left: 200px;
+            margin-top: 50px;
+            padding: 10px;
+
+         }
+         .btn2:hover{
+             background-color: @color-section1;
+             color: white;
+             border-color: white;
+         }
+         .card{
+             height: 650px;
+             margin: auto;
+             border-color: #565454bb;
+             -webkit-box-shadow: 10px 10px 23px 0px rgba(79,77,79,1);
+             -moz-box-shadow: 10px 10px 23px 0px rgba(79,77,79,1);
+             box-shadow: 10px 10px 23px 0px rgba(79,77,79,1);
+         }
+        
+    }
+    .Nosotros{
+        background-color: @color-section1;
+          .imagen{
+            padding: 50px;
+            margin-top: 15px;
+            height: 600px;
+                }
+        
+       h2{
+           .H2();
+           text-align: center;
+           padding-top: 25px;
+           
+       }
+       p{
+           text-align: center;
+           font-size: 1.7rem; //1rem == 16px
+           color: @color-letras;
+           font-family: @fuente-principal;
+           padding: 60px;
+       }
+    }
+    .Eventos{
+        background-color: @color-section2;
+        
+        h2{
+            .H2();
+            text-align: center;
+            padding-top: 30px;
+        }
+                  
+        
+        .card{
+          margin-left: 30px;
+          margin-top: 30px;
+          border-radius: 50px;
+          border-top-right-radius: 15px;
+          border-bottom-left-radius: 15px;
+          height: 390px;
+          .card-img-top{
+              width: 250px;
+              height: 207px;
+              margin: auto;
+              padding-top: 15px;
+              border-radius: 50px;
+              border-top-right-radius: 15px;
+              border-bottom-left-radius: 15px;
+          }
+        }
+        .shadow-drop-br:hover{
+            
+                -webkit-animation: shadow-drop-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                        animation: shadow-drop-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            
+        }
+         @-webkit-keyframes shadow-drop-br{
+           0% {
+             -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+           }
+           100% {
+             -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+           }
+         }
+         @keyframes shadow-drop-br{
+           0% {
+             -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+           }
+           100% {
+             -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+           }
+        }
+        .buttom{
+            margin-top: 15px;
+            border-color: @color-section1;
+            background-color: #56545400;
+            color: @color-letras;
+            font-family: @fuente-principal;
+            border-radius: 10px;
+            
+        }
+        .buttom:hover{
+            background-color: @color-section1;
+            color: white;
+            border-color: white;
+        }
+  
+           }
+    }
+       
+
